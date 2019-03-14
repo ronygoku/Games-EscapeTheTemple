@@ -1,0 +1,40 @@
+<html>
+<head>
+	<link rel="StyleSheet" href="https://raw.githubusercontent.com/ronygoku/Games-EscapeTheTemple/master/Game4.css" type="text/css" media="screen">
+	<script src="https://raw.githubusercontent.com/ronygoku/Games-EscapeTheTemple/master/Game4.js"></script>
+</head>
+<body onload="loadBoxes(); animateAll();">
+	<div id="winScreen" class="visibility_false">
+		<div id="winContent" class="visibility_false">
+			<div id="winContentMessage" class="visibility_false">You Win</div>
+			<div id="winContentRestartGame" class="visibility_false" onClick="window.location.reload();">Click here to &#x21bb;</div>
+		</div>
+	</div>
+	<div id="wrapper">
+		<div id="board"></div>
+		<div id="hiddenEle" style="visibility: hidden;">
+			<div class="box display_inline_block" onmouseover="highlightIt(this);"></div>
+		</div>
+	</div>
+	<div id="legend">
+		<ul>
+			<li>Use &#8678; &#8679; &#8680; &#8681; to move Player
+				<div class="box display_inline_block legendBox"></div>
+				tile.
+			</li>
+			<li>Use &lt;space&gt; + &#8678; &#8679; &#8680; &#8681; to jump
+				<div class="box display_inline_block legendBox"></div>
+				<div class="box display_inline_block legendBox"></div>
+				tiles.
+			</li>
+			<li>Use W A S D to shoot bullets (max 10 at a time): "
+				<div class="bullet display_inline_block legendBox"></div>
+				<div class="bullet display_inline_block legendBox"></div>
+				<div class="bullet display_inline_block legendBox"></div>
+			</li>
+			<li>Blue is the starting Position.</li>
+			<li>Red is the destination.</li>
+		</ul>
+	</div>
+</body>
+<html>
